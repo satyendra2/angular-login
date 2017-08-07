@@ -1,0 +1,16 @@
+$font-stack:Letterbats;
+$primary-color:#333;
+
+body {
+  font: $font-stack;
+  color:$primary-color;
+}
+img{
+  margin-bottom: 30px;
+}
+.panel {
+  margin-top: 200px;
+}
+table,th{
+  text-align: center;
+}

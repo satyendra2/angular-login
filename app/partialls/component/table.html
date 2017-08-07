@@ -1,0 +1,96 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Kitchen Items Application</h2>
+                <input type="text" ng-model="name">
+                <br/>
+                <br/>
+    <table id="myTable" class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th><a href="#" ng-click="sortType = 'code'; sortReverse = !sortReverse">
+                Code
+                <span ng-show="sortType == 'code' && !sortReverse" class="fa fa-caret-down"></span>
+                <span ng-show="sortType == 'code' && sortReverse" class="fa fa-caret-up"></span>
+            </a></th>
+            <th><a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse">
+            Name
+            <span ng-show="sortType == 'name' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'name' && sortReverse" class="fa fa-caret-up"></span>
+        </a></th>
+            <th><a href="#" ng-click="sortType = 'location'; sortReverse = !sortReverse">
+            Location
+            <span ng-show="sortType == 'location' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'location' && sortReverse" class="fa fa-caret-up"></span>
+        </a></th>
+            <th><a href="#" ng-click="sortType = 'price'; sortReverse = !sortReverse">
+            Price
+            <span ng-show="sortType == 'price' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'price' && sortReverse" class="fa fa-caret-up"></span>
+        </a></th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat = "item in items | orderBy:sortType:sortReverse | filter:name">
+            <td>{{item.code}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.location}}</td>
+            <td>{{item.price}}</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-default btn" ng-click="edit($index);" data-target="#mymodal" data-toggle="modal"><i class="glyphicon glyphicon-pencil"></i></button>
+                <button type="button" class="btn btn-default btn" ng-click="deleteItem($index);"><i class="glyphicon glyphicon-trash"></i></button>
+            </div></td>
+        </tr>
+        </tbody>
+    </table>
+            <button type="button" class="btn btn-primary btn" ng-click="save()"><i class="glyphicon glyphicon glyphicon-ok-circle" ></i>Add Row</button>
+            <div class="modal fade" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Edit Data</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form class="form form-group">
+                            <div class="row">
+                                <div class="form-group col-md-3">
+                                    <label for="code" class="col-md-2 control-label">Code:</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="code" placeholder="Code" ng-model="itemObject.code"/>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="name" class="col-md-1 control-label">Name:</label>
+                                    <div class="col-md-11">
+                                        <input type="text" class="form-control" id="name" placeholder="Name" ng-model="itemObject.name"/>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="location" class="col-md-1 control-label">Location:</label>
+                                    <div class="col-md-11">
+                                        <input type="text" class="form-control" id="location" placeholder="Location" ng-model="itemObject.location"/>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="price" class="col-md-2 control-label">Price:</label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="price" placeholder="Price" ng-model="itemObject.price"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group col-sm-2">
+                        <button type="button" class="btn btn-primary btn" ng-click="save()" data-dismiss="modal"><i class="glyphicon glyphicon glyphicon-ok-circle" ></i>Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       </div>
+    </div>
+</div>

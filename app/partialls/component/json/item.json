@@ -1,0 +1,107 @@
+[{
+  "code":"01",
+  "name":"cup1",
+  "location":"drawer1",
+  "price":"50rs"
+},{
+  "code":"01",
+  "name":"cup2",
+  "location":"drawer2",
+  "price":"55rs"
+},{
+  "code":"01",
+  "name":"cup3",
+  "location":"drawer3",
+  "price":"56rs"
+},{
+  "code":"02",
+  "name":"spoon1",
+  "location":"drawer4",
+  "price":"20rs"
+},{
+  "code":"02",
+  "name":"spoon2",
+  "location":"drawer5",
+  "price":"25rs"
+},{
+  "code":"02",
+  "name":"spoon3",
+  "location":"drawer6",
+  "price":"27rs"
+},{
+  "code":"03",
+  "name":"plate1",
+  "location":"drawer7",
+  "price":"70rs"
+},{
+  "code":"03",
+  "name":"plate2",
+  "location":"drawer8",
+  "price":"75rs"
+},{
+  "code":"03",
+  "name":"plate3",
+  "location":"drawer9",
+  "price":"80rs"
+},{
+  "code":"04",
+  "name":"knife1",
+  "location":"drawer10",
+  "price":"40rs"
+},{
+  "code":"04",
+  "name":"knife2",
+  "location":"drawer11",
+  "price":"45rs"
+},{
+  "code":"04",
+  "name":"knife3",
+  "location":"drawer12",
+  "price":"52rs"
+},{
+  "code":"05",
+  "name":"pan1",
+  "location":"drawer13",
+  "price":"150rs"
+},{
+  "code":"05",
+  "name":"pan2",
+  "location":"drawer14",
+  "price":"155rs"
+},{
+  "code":"05",
+  "name":"pan3",
+  "location":"drawer15",
+  "price":"160rs"
+},{
+  "code":"06",
+  "name":"tong1",
+  "location":"drawer16",
+  "price":"85rs"
+},{
+  "code":"06",
+  "name":"tong2",
+  "location":"drawer17",
+  "price":"90rs"
+},{
+  "code":"06",
+  "name":"tong3",
+  "location":"drawer18",
+  "price":"95rs"
+},{
+  "code":"07",
+  "name":"pulses1",
+  "location":"drawer19",
+  "price":"110rs"
+},{
+  "code":"07",
+  "name":"pulses2",
+  "location":"drawer20",
+  "price":"115rs"
+},{
+  "code":"07",
+  "name":"pulses3",
+  "location":"drawer21",
+  "price":"120rs"
+}]
+
